@@ -1,0 +1,44 @@
+1.  Khai báo trang mặc định trong htaccess <!-- DirectoryIndex tc.php -->
+    Lệnh DirectoryIndex là lệnh dùng để khai báo trang web mặc định cho Apache.
+
+    <!-- Nếu user khi request mà không nói rõ tên file (chỉ có tên folder) thì file mặc định sẽ chạy. Ví dụ user request địa chỉ
+    như sau là không có tên file: https://longnv.name.vn/lap-trinh-php/ , khi đó file tc.php trong folder lap-trinh-php sẽ
+    thực thi. -->
+
+2.  Khai báo bảng mã <!-- AddDefaultCharset UTF-8 -->
+    Lệnh AddDefaultCharset dùng để thông báo cho trình duyệt về bảng mã cần dùng để hiện text trong trình duyệt. 
+    Lệnh này rất hữu ích, vì bạn không cần khai báo bảng mã bằng tag meta trong từng trang nữa.
+
+3.  Cấm hiện danh sách file <!-- Options -Indexes -->
+    Sử dụng htaccess cấm apache hiện danh sách file đễ tăng tính bảo mật cho website. 
+    Là bởi vì khi user request một folder mà folder đó không có trang mặc định, apache sẽ liệt kê các file ra. 
+    Hoạt động này rất không tốt (không bảo mật). Bạn nên cấm bằng lệnh 
+    
+4.  Bật tắt chế độ chuyển địa chỉ <!-- RewriteEngine on | off  -->
+
+5.  Lệnh chuyển địa chỉ <!-- RewriteRule pattern  url   [flag]    -->
+    Sử dụng htaccess để chuyển địa chỉ giả thành địa chỉ thật là hoạt động phổ biến nhất trong htaccess. 
+    Bạn sẽ dùng lệnh rewriterule để chuyển địa chỉ, nó giúp điều chỉnh địa chỉ giả của một url thành địa chỉ thật, 
+    giúp địa chỉ đẹp hơn, có giá trĩị nhiều cho SEO.
+
+    Trong đó pattern là mẫu theo cú pháp regex diễn tả địa chỉ giả , url là địa chỉ thật, flag là cờ xử lý.
+
+    + pattern: là một regular expression để so khớp với URL hiện hành  
+            .                    Diễn tả 1 ký tự bất kỳ
+        [chars]          lớp ký tự (một trở đi)
+        text1|text2    text1 hoặc text2
+        ?                   0 hoặc 1 của text phía trước
+        *                   0 hoặc nhiều lần text phía trước
+        +                   1 hoặc nhiều lần text phía trước
+        (text)             Nhóm ký tự                     
+        ^                   Diễn tả sự bắt đầu
+        $                   Diễn tả vị trí cuối
+        \char              escape từng ký tự đặc biệt:   ".[]()" 
+        Ký tự ! có thể được dùng trước parttern đễ diễn tả ý nghĩa phủ định
+        + flags là cờ  chỉ định cách hoạt động của chỉ thị này:
+        [R] (force Redirect) Yêu cầu trình duyệt tạm chuyển hướng tới 1 địa chỉ khác.
+        [F] (force URL to be Forbidden) Điều khiển URL hiện tại thành forbidden. Nó gởi HTTP response, 403 (FORBIDDEN).
+        [L] (last rule) Điều khiển quá trình rewrite dừng lại ở rule này
+        [NC] (no case)  Không phân biệt chữ hoa thường
+    + url  là quy tắc thay thế cho địa chỉ gốc do client request. 
+     Trong url  có thể dùng các server variables hoặc “tham khảo ngược %N”  tới pattern của rewrite rule
