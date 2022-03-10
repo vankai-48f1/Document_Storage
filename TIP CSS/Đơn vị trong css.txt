@@ -1,0 +1,15 @@
+- ĐƠN VỊ TƯƠNG ĐỐI:
+ + % (percentages)
+ + em : là đơn vị tương đối dựa vào thuộc tính của font-size phần tử mẹ
+ + rem : là đơn vị tương đối dựa vào thuộc tính font-size của html (root element)
+
+- ĐƠN VỊ TUYỆT ĐỐI:
+ + px *: pixels (1px = 1/96th of 1in)
+ + pt: points (1pt = 1/72 of 1in)
+ + pc: picas (1pc = 12 pt)
+ + cm: centimeters
+ + mm: millimeters
+ + in: inches (1in = 96px = 2.54cm)
+
+
+(((( 1 inch = 2.54cm = 25.4mm = 0.0254m ))))

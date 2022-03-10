@@ -1,0 +1,1 @@
+Slug variable: attribute_pa_color=black&attribute_pa_size=s
