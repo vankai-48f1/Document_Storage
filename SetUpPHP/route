@@ -1,0 +1,10 @@
+- Create file index.php in root folder
+- Config file .htaccess
+- Create folder mvc
+- mvc :
+    + controllers (nhận và xử lý request)
+    + models (tương tác với Database)
+    + views (hiện thị views)
+    + core or any name ( chứa các class bên ngoài dùng để kết nối, bắc cầu kết nối)
+    + route.php/bridge.php (nơi phân bố các nhánh trên)
+- Folder public -- Nơi chứa các tài nguyên css/js/bootstrap... để views ra bên ngoài
