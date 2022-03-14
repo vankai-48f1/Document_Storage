@@ -1,0 +1,22 @@
+* PDO là viết tắt của từ PHP DATA OBJECT, từ php 5.1 ta có một cách truy suất dữ liệu database một cách tối ưu hơn
+  với các cơ chế Prepared Statements, Stored Procedures và giúp bạn thao tác với database thông qua các Object (đối tượng) làm cho công việc trở nên hiệu quả, dễ dàng hơn.
+
+1. Insert và Update (bằng cơ chế Prepared Statements)
+
+    Thêm mới (insert) và cập nhật (update) dữ liệu là những hoạt động cơ bản khi thao tác với database. 
+    Với PDO, mỗi hoạt động insert hay update được thực hiện qua 3 quá trình sử dụng cơ chế Prepared Statement
+
+    - Prepare statement: Chuẩn bị một câu lệnh SQL làm khung/mẫu được gọi là Prepared Statement với các Placeholder 
+    (có thể hiểu placeholder đóng vai trò như tham số của các phương thức khi bạn khai báo hàm)
+    - Bind params: Gắn giá trị thực vào các placeholder (tương tự như khi bạn truyền giá trị vào các tham số của phương thức)
+    - Execute: Thực thi câu lệnh.
+
+*** Prepared Statement ***:
+
+    Có 2 loại Placeholder trong Prepared Statement là Placeholder không định danh (Unnamed Placeholder) và Placeholder định danh (Named Placeholder) như ví dụ sau:
+
+    $stmt = $conn->prepare('INSERT INTO users (name, email, age) values (?, ?, ?)');
+    $stmt = $conn->prepare('INSERT INTO users (name, email, age) values (:name, :mail, :age)');
+
+    Dòng lệnh thứ nhất sử dụng Placeholder không định danh là các dấu hỏi - ?. Dòng lệnh thứ 2 sử dụng Placeholder định danh: :name, :mail, :age (lưu ý dấu hai chấm và placeholder không nhất thiết phải giống tên column). 
+    Sau đây là toàn bộ quá trình Insert và Update sử dụng 2 loại Placeholder nêu trên.

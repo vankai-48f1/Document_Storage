@@ -1,0 +1,11 @@
+- SQL server: là hệ quản trị database của Microsoft, còn MySQL là hệ quản trị database có mã nguồn mở có thể chạy trên nhiều platform như Linux, WinXP... 
+  Theo đánh giá của nhiều người, SQL Server của Microsoft mạnh hơn, bảo mật tốt hơn nhiều so với MySQL.
+
+- Hệ quản trị CSDL Oracle: là hệ quản trị CSDL mạnh nhất, tốt nhất chạy trên mọi nền tảng.
+
+- SQlite: SQLite là hệ thống cơ sở dữ liệu quan hệ nhỏ gọn, hoàn chỉnh, có thể cài đặt bên trong các trình ứng dụng khác. SQLite được viết dưới bằng ngôn ngữ lập trình C.
+
+- MongoDB: MongoDB là một mã nguồn mở và là một tập tài liệu dùng cơ chế NoSQL để truy vấn, nó được viết bởi ngôn ngữ C++.
+
+- PostgreSql: PostgreSQL cũng là hệ quản trị cơ sở dữ liệu hỗ trợ rất tốt trong việc lưu trữ dữ liệu không gian. 
+  PostgreSQL kết hợp với module Postgis cho phép người dùng lưu trữ các lớp dữ liệu không gian một cách hiệu quả.
