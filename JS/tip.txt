@@ -1,0 +1,1 @@
+- serialize() method Output the result of serialized form values.

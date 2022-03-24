@@ -1,0 +1,2 @@
+1. Ctrl+Shift+Esc: Mở Task Manager.
+2. Shift+Del: Xóa mục đã chọn mà không di chuyển nó vào Recycle Bin.
