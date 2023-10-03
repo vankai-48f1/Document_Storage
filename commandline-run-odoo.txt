@@ -1,0 +1,2 @@
+python /odoo-bin -c my-odoo.conf
+// example: python D:\Apps\Odoo\odoo-16.0\odoo-bin -c D:\Apps\Odoo\configs\oryza_010102023_01.conf

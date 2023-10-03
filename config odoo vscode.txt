@@ -1,0 +1,40 @@
+{
+    // A Configuration Code For Vs-Code
+    "version": "0.2.0",
+    "configurations": [{
+        "name": "Python: Odoo16",
+        "type": "python",
+        "request": "launch",
+        "stopOnEntry": false,
+        "python": "C:\\Users\\pande\\OneDrive\\Documents\\New folder\\python\\python.exe", //path of python in your local machine where odoo has installed
+        "console": "integratedTerminal",
+        "program": "${workspaceRoot}\\odoo-bin",
+        "args": [
+            "--config=${workspaceRoot}\\odoo.conf",
+        ],
+        "cwd": "${workspaceRoot}",
+        "env": {},
+        "envFile": "${workspaceRoot}/.env",
+        "debugOptions": [
+            "RedirectOutput"
+        ]
+    }]
+}
+
+// file default
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        }
+    ]
+}

@@ -1,0 +1,3 @@
+- Khi sử dụng t-if="record.fieldName" trong kanban view, để chạy được cần phải hiển thị <field name="fieldName"/>
+thì mới kiểm tra được điều kiện 
+- 

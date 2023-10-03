@@ -1,0 +1,2 @@
+- Database superuser password: Khai2203
+- oryza_1/Vankai2203
