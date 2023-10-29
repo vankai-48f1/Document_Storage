@@ -4,3 +4,4 @@
 - Config git user name global: git config --global user.name tuan.bd
 - Reset user account after change: git commit --amend --reset-author --no-edit
 - Push new branch from local to remote: git push -u origin <branch name>
+- Remove cache: git rm -r --cached .
