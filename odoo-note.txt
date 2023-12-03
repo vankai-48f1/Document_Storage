@@ -14,3 +14,18 @@ D:\Apps\Odoo\odoo-16.0\addons\web\static\src\views\fields\relational_utils.xml
 
 
 ### Mô phỏng model backend trên frontend có trong file addons/../mock_server.js
+### Attachment jquery context: attachments_manager\static\src\libs\jQuery-contextMenu\jquery.contextMenu.js
+
+###
+Call rpc and fetchdata
+async onLockAttachment(ev) {
+      
+      await this.messaging
+        .rpc({
+          model: "ir.attachment",
+          method: "act_lock",
+          args: [[this.attachment.id]],
+        })
+        
+      await this.attachment.originThread.fetchData(["attachments"]);
+    },
