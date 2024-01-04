@@ -1,4 +1,4 @@
-- Delete branch local: git branch --delete <branch>
+- Delete branch local: git branch -d <branch>
 - Deleting a Git remote branch: git push origin -d <branch name>
 - Config git user email global: git config --global user.email tuan.bd@oryza.vn
 - Config git user name global: git config --global user.name tuan.bd
